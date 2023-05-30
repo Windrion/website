@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(36,63,101);
+    background: linear-gradient(0deg, rgba(36,63,101,1) 0%, rgba(8,25,48,1) 100%);
+}
+main{
+    background: rgb(36,63,101);
+    background: linear-gradient(0deg, rgba(36,63,101,1) 0%, rgba(8,25,48,1) 100%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+    
+}
+
+header{
+    padding: 20px 20px;
+    font-size: 26px;
+    list-style: none;
+    display: flex;
+}
+#meni{
+    display: flex;
+    margin-left: 60%;
+}
+#meni>div{
+    margin-inline: 10px;
+}
+#mainBox{
+    display: flex;
+    align-items: center;
+    height: 80%;
+    padding-inline:5% ;
+    
+}
+
+
+#mainBox>#leftText{
+    font-size: 60px;
+}
+#boldText{
+    font-weight: 700;
+}
+#frontDev{
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(17, 136, 233);
+}
+#aboutText{
+    font-size: 16px;
+    width: 600px;
+}
+#selfie{
+    margin-left:400px;
+    filter: drop-shadow(10px 10px 25px rgba(0, 0, 0, 0.5));
+    border-radius: 50%;
+    
+    
+}
+footer{
+    margin-inline: 5%;
+    
+}
+footer>button{
+    background-image: linear-gradient(90deg, white 0%,
+        white 50%  ,
+        rgba(36,63,101,1) 50% ,
+        rgba(36,63,101,1) 100% );
+    background-size: 230%;
+    background-position: right;
+    
+
+    font-size: 28px;
+    border-radius: 20px;
+    border: 3px solid rgba(8,25,48,1);
+    padding: 10px;
+    
+}
+footer>button>a{
+    text-decoration: none;
+    color:white;
+}
+footer>button:hover{
+    background-color: white;
+    animation: scaleM 0.2s linear 0s 1 normal forwards;
+    background-position: left;
+    transition: background-position 0.8s ;
+    
+}
+footer>button:hover>a{
+    color: rgba(8,25,48,1);
+    
+
+}
+
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes scaleM {
+	0% {
+		transform: scale(1);
+        
+        
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
+}
